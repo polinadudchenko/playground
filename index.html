@@ -12,83 +12,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="form js-speaker-form">
-      <div class="form-field">
-        <label for="name" class="form-label">Name</label>
-        <input class="form-input" type="text" name="user-name" id="name" placeholder="Thomas Muller" autofocus />
-      </div>
-      <div class="form-field">
-        <label for="tel">Phonenumber</label>
-        <input type="tel" name="tel" id="tel" />
-      </div>
-      <div class="form-field">
-        <label for="mail">E-mail</label>
-        <input type="email" name="mail" id="mail" />
-      </div>
-      <div role="group" class="group">
-        <h2 class="group-title">Theme of presentation</h2>
-        <ul class="topic-options">
-          <li><input type="checkbox" name="topic" value="HTML" id="html" /> <label for="html">HTML</label></li>
-
-          <li>
-            <input type="checkbox" name="topic" value="CSS" id="css" />
-            <label for="css">CSS</label>
-          </li>
-
-          <li>
-            <input type="checkbox" name="topic" value="js" id="js" />
-            <label for="js">JavaScript</label>
-          </li>
-        </ul>
-      </div>
-
-      <div role="group" class="group">
-        <h2 class="group-title">The level of your experience</h2>
-        <ul class="experience-options">
-          <li>
-            <input type="radio" name="experience" value="junior" id="junior" /> <label for="junior">Junior</label>
-          </li>
-          <li>
-            <input type="radio" name="experience" value="middle" id="middle" /> <label for="middle">Middle</label>
-          </li>
-          <li>
-            <input type="radio" name="experience" value="senior" id="senior" /> <label for="senior">Senior</label>
-          </li>
-        </ul>
-      </div>
-
-      <div class="form-field">
-        <label for="date">Date of presentation</label>
-        <input type="date" name="date" id="date" class="date" />
-      </div>
-
-      <div class="form-field">
-        <label for="pdf">Please load a copy of your presentation in PDF format </label>
-        <input type="file" name="pdf" id="pdf" />
-      </div>
-
-      <div class="form-field">
-        <label for="comment">Your comment</label>
-        <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Leave a comment"></textarea>
-      </div>
-
-      <div class="form-field">
-        <input type="checkbox" name="policy" id="policy" />
-        <label for="policy">I am in</label>
-      </div>
-
-      <button type="submit">Send</button>
-    </form>
-    <script>
-      ;(() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-          e.preventDefault()
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))
-
-          e.currentTarget.reset()
-        })
-      })()
-    </script>
+    <div class="container">
+      <section class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="../images/img1.jpg" class="gallery__img" alt="Pistachios ice cream" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="../images/img2.jpg" class="gallery__img" alt="Ice cream in waffle" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="../images/img3.jpg" class="gallery__img" alt="Raspberry ice cream" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="../images/img4.jpg" class="gallery__img" alt="8 ice cream cone" />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src="../images/img5.jpg" class="gallery__img" alt="Girl with ice cream" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src="../images/img6.jpg" class="gallery__img" alt="Ice cream dessert" />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img src="../images/img7.jpg" class="gallery__img" alt="Ice cream in the city" />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img src="../images/img8.jpg" class="gallery__img" alt="Dog with ice cream" />
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <img src="../images/img9.jpg" class="gallery__img" alt="Shokoshake with straw" />
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <img src="../images/img10.jpg" class="gallery__img" alt="Ice cream dessert" />
+        </figure>
+      </section>
+    </div>
   </body>
 </html>
